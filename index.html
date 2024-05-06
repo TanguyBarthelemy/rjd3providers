@@ -82,15 +82,16 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
+<p>Running rjd3 packages requires Java 17 or higher. How to set up such a configuration in R is explained <a href="https://jdemetra-new-documentation.netlify.app/#installing-the-software" class="external-link">here</a>.</p>
 <p>To get the current stable version (from the latest release):</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"rjdemetra/rjd3toolkit@*release"</span><span class="op">)</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"rjdemetra/rjd3providers@*release"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rjdverse/rjd3toolkit@*release"</span><span class="op">)</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rjdverse/rjd3providers@*release"</span><span class="op">)</span></span></code></pre></div>
 <p>To get the current development version from GitHub:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"rjdemetra/rjd3providers"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"rjdverse/rjd3providers"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
@@ -185,20 +186,20 @@
 </h3>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
-<span><span class="co"># remotes::install_github("rjdemetra/rjdemetra3")</span></span>
+<span><span class="co"># remotes::install_github("rjdverse/rjd3workspace")</span></span>
 <span></span>
 <span><span class="va">new_jd3_ts</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/spreadsheet_series.html">spreadsheet_series</a></span><span class="op">(</span>file <span class="op">=</span> <span class="va">xlsx_file</span>, sheet <span class="op">=</span> <span class="fl">1L</span>, series <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
-<span><span class="fu">rjdemetra3</span><span class="fu">::</span><span class="fu">set_ts</span><span class="op">(</span><span class="va">jsap1</span>, <span class="fl">2</span>, <span class="va">new_jd3_ts</span><span class="op">)</span></span>
+<span><span class="fu">rjd3workspace</span><span class="fu">::</span><span class="fu">set_ts</span><span class="op">(</span><span class="va">jsap1</span>, <span class="fl">2</span>, <span class="va">new_jd3_ts</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># open an existing WS</span></span>
-<span><span class="va">ws</span> <span class="op">&lt;-</span> <span class="fu">rjdemetra3</span><span class="fu">::</span><span class="fu">.jws_open</span><span class="op">(</span>file <span class="op">=</span> <span class="va">some_ws_path</span><span class="op">)</span></span>
+<span><span class="va">ws</span> <span class="op">&lt;-</span> <span class="fu">rjd3workspace</span><span class="fu">::</span><span class="fu">.jws_open</span><span class="op">(</span>file <span class="op">=</span> <span class="va">some_ws_path</span><span class="op">)</span></span>
 <span><span class="co"># open an existing SAP</span></span>
-<span><span class="va">jsap</span> <span class="op">&lt;-</span> <span class="fu">rjdemetra3</span><span class="fu">::</span><span class="fu">.jws_sap</span><span class="op">(</span><span class="va">ws</span>, idx <span class="op">=</span> <span class="fl">1L</span><span class="op">)</span></span>
+<span><span class="va">jsap</span> <span class="op">&lt;-</span> <span class="fu">rjd3workspace</span><span class="fu">::</span><span class="fu">.jws_sap</span><span class="op">(</span><span class="va">ws</span>, idx <span class="op">=</span> <span class="fl">1L</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Change the TS object with the new moniker</span></span>
-<span><span class="fu">rjdemetra3</span><span class="fu">::</span><span class="fu">set_ts</span><span class="op">(</span>jsap <span class="op">=</span> <span class="va">jsap</span>, idx <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="va">ts1</span><span class="op">)</span></span>
+<span><span class="fu">rjd3workspace</span><span class="fu">::</span><span class="fu">set_ts</span><span class="op">(</span>jsap <span class="op">=</span> <span class="va">jsap</span>, idx <span class="op">=</span> <span class="fl">1</span>, y <span class="op">=</span> <span class="va">ts1</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">rjdemetra3</span><span class="fu">::</span><span class="fu">save_workspace</span><span class="op">(</span>jws <span class="op">=</span> <span class="va">ws_path</span>, file <span class="op">=</span> <span class="st">"./ws/ws_path_v3.xml"</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">rjd3workspace</span><span class="fu">::</span><span class="fu">save_workspace</span><span class="op">(</span>jws <span class="op">=</span> <span class="va">ws_path</span>, file <span class="op">=</span> <span class="st">"./ws/ws_path_v3.xml"</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
@@ -209,7 +210,7 @@
 <div class="section level2">
 <h2 id="licensing">Licensing<a class="anchor" aria-label="anchor" href="#licensing"></a>
 </h2>
-<p>The code of this project is licensed under the <a href="https://joinup.ec.europa.eu/page/eupl-text-11-12" class="external-link">European Union Public Licence (EUPL)</a>.</p>
+<p>The code of this project is licensed under the <a href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12" class="external-link">European Union Public Licence (EUPL)</a>.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
