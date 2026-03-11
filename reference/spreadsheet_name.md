@@ -16,5 +16,5 @@ The name of the spreadsheet provider, to be used in monikers.
 
 ``` r
 print(spreadsheet_name())
-#> Error in .jfield("jdplus/spreadsheet/base/api/SpreadSheetProvider", "S",     name = "NAME"): cannot find class jdplus/spreadsheet/base/api/SpreadSheetProvider
+#> [1] "XCLPRVDR"
 ```

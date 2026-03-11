@@ -101,10 +101,7 @@ Returns the specified time series
 ``` r
 # \donttest{
 set_txt_paths(system.file("extdata", package = "rjd3providers"))
-#> Error in .jcall("jdplus/text/base/r/TxtFiles", "V", "setPaths", .jarray(paths)): RcallMethod: cannot determine object class
 txt_15 <- txt_series("ABS.csv", series = 15, delimiter = "COMMA")
-#> Error in .jcall(obj = "jdplus/text/base/r/Utility", returnSig = "Ljdplus/toolkit/base/tsp/util/ObsFormat;",     method = "obsFormat", as.character(locale), as.character(dateFmt),     as.character(numberFmt), as.logical(ignoreNumberGrouping)): java.lang.UnsupportedClassVersionError: jdplus/text/base/r/TxtFiles has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
 txt_09 <- txt_series("ABS.csv", series = "0.2.09.10.M", delimiter = "COMMA")
-#> Error in .jcall(obj = "jdplus/text/base/r/Utility", returnSig = "Ljdplus/toolkit/base/tsp/util/ObsFormat;",     method = "obsFormat", as.character(locale), as.character(dateFmt),     as.character(numberFmt), as.logical(ignoreNumberGrouping)): RcallMethod: cannot determine object class
 # }
 ```

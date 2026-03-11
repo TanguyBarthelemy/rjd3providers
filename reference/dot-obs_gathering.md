@@ -42,5 +42,5 @@ An internal Java object.
 
 ``` r
 .obs_gathering(period=4, aggregationType="Sum")
-#> Error in .jcall(obj = "jdplus/toolkit/base/r/util/Providers", returnSig = "Ljdplus/toolkit/base/api/timeseries/util/ObsGathering;",     method = "obsGathering", as.integer(period), as.character(aggregationType),     as.logical(allowPartialAggregation), !as.logical(cleanMissing)): java.lang.UnsupportedClassVersionError: jdplus/text/base/r/Utility has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+#> [1] "Java-Object{ObsGathering(epoch=1970-01-01T00:00, unit=P3M, aggregationType=Sum, allowPartialAggregation=false, includeMissingValues=false)}"
 ```

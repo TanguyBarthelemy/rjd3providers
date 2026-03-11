@@ -31,12 +31,9 @@ Returns the new identifier.
 ``` r
 # \donttest{
 set_spreadsheet_paths(system.file("extdata", package = "rjd3providers"))
-#> Error in .jcall("jdplus/spreadsheet/base/r/SpreadSheets", "V", "setPaths",     .jarray(paths)): RcallMethod: cannot determine object class
 xls_all <- spreadsheet_data("Insee.xlsx", 1)
-#> Error in .jcall(obj = "jdplus/toolkit/base/r/util/Providers", returnSig = "Ljdplus/toolkit/base/api/timeseries/util/ObsGathering;",     method = "obsGathering", as.integer(period), as.character(aggregationType),     as.logical(allowPartialAggregation), !as.logical(cleanMissing)): java.lang.UnsupportedClassVersionError: jdplus/spreadsheet/base/r/SpreadSheets has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
 id<-xls_all$moniker$id
-#> Error: object 'xls_all' not found
 spreadsheet_change_file(id, "test.xlsx")
-#> Error: object 'id' not found
+#> [1] "demetra://tsprovider/XCLPRVDR/20111201/COLLECTION?file=test.xlsx#sheetName=FRANCE%20Textile"
 # }
 ```

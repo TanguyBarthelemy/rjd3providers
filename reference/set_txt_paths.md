@@ -22,5 +22,4 @@ An internal java moniker
 
 ``` r
 set_txt_paths(system.file("extdata", package = "rjd3providers"))
-#> Error in .jcall("jdplus/text/base/r/TxtFiles", "V", "setPaths", .jarray(paths)): RcallMethod: cannot determine object class
 ```

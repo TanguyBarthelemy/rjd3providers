@@ -1,8 +1,8 @@
 # Changelog
 
-## rjd3providers 3.6.0
+## rjd3providers 3.7.1
 
-CRAN release: 2026-02-20
+CRAN release: 2026-03-11
 
 All notable changes to this project will be documented in this file.
 
@@ -11,6 +11,10 @@ Changelog](https://keepachangelog.com/en/1.1.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### [Unreleased](https://github.com/rjdverse/rjd3providers/compare/v3.6.0...HEAD)
+
+#### Changed
+
+- New JARS
 
 ### [3.6.0](https://github.com/rjdverse/rjd3providers/compare/v3.5.1...v3.6.0) - 2025-11-24
 
@@ -73,6 +77,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 #### Changed
 
 - New JARS
+  [v3.7.1](https://github.com/jdemetra/jdplus-main/releases/tag/v3.7.1)
 
 ### [3.2.2](https://github.com/rjdverse/rjd3providers/compare/v3.2.1...v3.2.2) - 2024-03-15
 

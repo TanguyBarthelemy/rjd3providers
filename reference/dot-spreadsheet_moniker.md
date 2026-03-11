@@ -22,5 +22,5 @@ An internal Java moniker.
 
 ``` r
 .spreadsheet_moniker("toy_id")
-#> Error in .jfield("jdplus/spreadsheet/base/api/SpreadSheetProvider", "S",     name = "NAME"): cannot find class jdplus/spreadsheet/base/api/SpreadSheetProvider
+#> [1] "Java-Object{XCLPRVDR<@>toy_id}"
 ```

@@ -16,5 +16,5 @@ The name of the text provider, to be used in monikers
 
 ``` r
 txt_name()
-#> Error in .jfield("jdplus/text/base/api/TxtProvider", name = "NAME"): cannot find class jdplus/text/base/api/TxtProvider
+#> [1] "Txt"
 ```

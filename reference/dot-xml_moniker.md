@@ -22,5 +22,5 @@ An internal java moniker.
 
 ``` r
 .xml_moniker("toy_id")
-#> Error in .jfield("jdplus/text/base/api/XmlProvider", "S", name = "NAME"): cannot find class jdplus/text/base/api/XmlProvider
+#> [1] "Java-Object{Xml<@>toy_id}"
 ```
