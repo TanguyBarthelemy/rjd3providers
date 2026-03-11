@@ -39,5 +39,5 @@ An internal Java object.
 
 ``` r
 .obs_format(locale = "french-be")
-#> [1] "Java-Object{french_BE ~  ~  ~ ignore-grouping}"
+#> Error in .jcall(obj = "jdplus/text/base/r/Utility", returnSig = "Ljdplus/toolkit/base/tsp/util/ObsFormat;",     method = "obsFormat", as.character(locale), as.character(dateFmt),     as.character(numberFmt), as.logical(ignoreNumberGrouping)): RcallMethod: cannot determine object class
 ```

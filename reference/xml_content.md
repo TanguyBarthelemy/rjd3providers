@@ -30,7 +30,7 @@ by collection.
 set_xml_paths(system.file("extdata", package = "rjd3providers"))
 #> Error in .jcall("jdplus/text/base/r/XmlFiles", "V", "setPaths", .jarray(paths)): RcallMethod: cannot determine object class
 xml_content("Prod.xml")
-#> Error in .jcall("jdplus/text/base/r/XmlFiles", "Ljdplus/toolkit/base/tsp/DataSource;",     "source", as.character(file), as.character(charset)): java.lang.NoClassDefFoundError: Could not initialize class jdplus.text.base.r.XmlFiles
+#> Error in .jcall("jdplus/text/base/r/XmlFiles", "Ljdplus/toolkit/base/tsp/DataSource;",     "source", as.character(file), as.character(charset)): java.lang.UnsupportedClassVersionError: jdplus/text/base/r/XmlFiles has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
 print(xml_content)
 #> function (file, charset = NULL) 
 #> {
@@ -46,7 +46,7 @@ print(xml_content)
 #>     }
 #>     return(rslt)
 #> }
-#> <bytecode: 0x55612dc82120>
+#> <bytecode: 0x56430457d5a8>
 #> <environment: namespace:rjd3providers>
 # }
 ```
